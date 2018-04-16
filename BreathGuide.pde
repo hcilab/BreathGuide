@@ -13,7 +13,7 @@ float depth;
 
 
 void setup() {
-	size(400, 400);
+	size(800, 800);
 	background(255);
 	frameRate(15);
 
@@ -44,9 +44,9 @@ void draw() {
 	int breathLengthMillis = int((60/cpm) * 1000);
 	float sinWave = sin(map(millis() % breathLengthMillis, 0, breathLengthMillis, 0, TWO_PI));
 
-	float radius = map(sinWave, -1.0, 1.0, 150, 150 + depth*150);
+	float radius = map(sinWave, -1.0, 1.0, 300, 300 + depth*300);
 	float intensity = map(sinWave, -1.0, 1.0, 240, 240 - depth*225);
 
 	fill(intensity);
-	ellipse(200, 240, radius, radius);
+	ellipse(400, 480, radius, radius);
 }
