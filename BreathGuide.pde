@@ -26,7 +26,7 @@ void setup() {
 		.setPosition(100, 20)
 		.setSize(200, 20)
 		.setRange(4.0, 20.0)
-		.setValue(8.0)
+		.setValue(6.0)
 		.setColorCaptionLabel(color(0));
 	controlP5.addSlider("depth")
 		.setPosition(100, 50)
